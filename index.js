@@ -101,11 +101,49 @@ function largestOfFour(arr) {
 //============== SLICE METHOD==========//
 
 let text = "Hello titans";
-// slice the first 4 positions, taking away the 4th
+// slice the first 4 positions, taking away the 4th:
+// result will be Hell
 let result = text.slice(0, 4);
 //console.log(result);
 
 let text1 = "Hello titans";
-// slices from position 3 to the end
-let result1 = text.slice(3);
-// console.log(result1);
+// slices from position 3 to the end: result will be lo titans
+let result1 = text.slice();
+//console.log(result1);
+
+// Question : Check if a string (first argument, str) ends with the given target string (second argument, target).
+
+// SOLUTION 1
+function confirmEnding(str, target) {
+	return str.slice(str.length - target.length) == target;
+}
+
+//console.log(confirmEnding("this id is first", "first"));
+
+// SOLUTION 2
+function confirmEnding2(str, target) {
+	// When a negative number is provided as a first parameter to slice()
+	//, the offset is taken backwards from the end of the string
+	return str.slice(-target.length) === target;
+}
+// SOLUTION 3
+function confirmEnding3(str, target) {
+	let reg = new RegExp(target + "$", "i");
+
+	return reg.test(str);
+}
+
+// =====REPEAT STRING NUM OF TIMES
+// Question : Repeat a given string str (first argument) for num times (second argument).
+//  Return an empty string if num is not a positive number.
+//  For the purpose of this challenge, do not use the built-in .repeat() method.
+
+// SOLUTION1
+function repeatStringNumTimes(str, num) {
+	let repeatedWord = "";
+	for (let i = 0; i < num; i++) {
+		repeatedWord += str;
+	}
+	return repeatedWord;
+}
+console.log(repeatStringNumTimes("yea", 3));
