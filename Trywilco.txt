@@ -1,0 +1,8 @@
+docker compose up
+
+(Once docker-compose is up and running, you can access the frontend and backend using the above urls)
+
+Backend   3000   private     https://jocatins-refactored-couscous-grg54g9xgjq2vw7w-3000.preview.app.github.dev
+Frontend  3001   private     https://jocatins-refactored-couscous-grg54g9xgjq2vw7w-3001.preview.app.github.dev
+Database  5433   private     https://jocatins-refactored-couscous-grg54g9xgjq2vw7w-5433.preview.app.github.dev
+Database  27017  private     https://jocatins-refactored-couscous-grg54g9xgjq2vw7w-27017.preview.app.github.dev
