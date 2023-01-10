@@ -56,9 +56,9 @@ function findLongestWordLength1(str) {
 	}
 	return maxLength;
 }
-// console.log(
-// 	findLongestWordLength1("The quick brown fox jumped over the lazy dog")
-// );
+console.log(
+	findLongestWordLength1("The quick brown fox jumped over the lazy dog")
+);
 // -------------------------------------------------------------------------
 const array1 = [1, 2, 3, 4];
 
