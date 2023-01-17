@@ -56,28 +56,3 @@ function getMinMax2(arr) {
 		max,
 	};
 }
-// Write a function that will verify if string has balanced parenthesis
-
-// Eg ---> isBalanced('()()(())') ==> true
-
-function isBalanced(str) {
-	// create an array to add and remove parenthesis
-	const stack = [];
-
-	for (let char of str) {
-		// if it is an open parenthesis
-		if (char === "(") {
-			// add it to the array
-			stack.push(char);
-		} else {
-			// else remove the last item from the array
-			const lastStackItem = stack.pop();
-			// it is not balanced if the last item on the array is not an opening parenthesis
-			if (lastStackItem !== "(") {
-				return false;
-			}
-		}
-	}
-	// it is not balanced if the arr is not empty
-	if (stack.length !== 0) return false;
-}
