@@ -17,4 +17,16 @@ function getVowels1(sentence) {
 	}
 	return vowelsCount;
 }
-console.log(getVowels1("I really need "));
+
+function getVowels2(sentence) {
+	let vowelsCount = 0;
+	const vowels = ["a", "e", "i", "0", "u"];
+
+	for (let char of sentence) {
+		if (vowels.includes(char.toLowerCase())) {
+			vowelsCount++;
+		}
+	}
+	return vowelsCount;
+}
+console.log(getVowels("I really need "));

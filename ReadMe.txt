@@ -110,3 +110,13 @@ eg
  it again until a certain condition is met. 
  In other words, loops let your code execute one or more statements 
  as many times as desired.
+
+
+ //// JavaScript Callback
+
+ With asynchronous programming, JavaScript programs can start long-running tasks, and continue running other tasks in parallell.
+
+But, asynchronus programmes are difficult to write and difficult to debug.
+
+Because of this, most modern asynchronous JavaScript methods don't use callbacks. Instead, in JavaScript,
+ asynchronous programming is solved using Promises instead.
