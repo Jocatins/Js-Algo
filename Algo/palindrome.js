@@ -2,21 +2,19 @@
 
 let letters = [];
 
-let word = "racecar";
+let word = "titan";
 
-let reversedWord = "";
+let reversedString = "";
 
-// push the letters of word into the stack
 for (let i = 0; i < word.length; i++) {
+	// push the letters of word into the stack
 	letters.push(word[i]);
 }
-// pop of the stack in reversed order .pop reverses the word
 for (let i = 0; i < word.length; i++) {
-	reversedWord += letters.pop();
-	//	console.log("New-pop", newPop, i);
+	// pop of the stack in reversed order .pop reverses the word
+	reversedString += letters.pop();
+	// console.log(reversedString);
 }
-if (reversedWord === word) {
-	console.log(word, "this is a palindrome");
-} else {
-	console.log("this is not a palindrome");
-}
+if (reversedString === word) {
+	return console.log("this is a palindrome");
+} else return console.log("This is not a palindrome");
