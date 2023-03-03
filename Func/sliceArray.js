@@ -9,6 +9,6 @@ function sliceArray(anim, beginSlice, endSlice) {
 }
 var inputAnim = ["Cat", "Dog", "Tiger", "Zebra", "Ant", "goat"];
 
-console.log(sliceArray(inputAnim, 2, 5));
+// console.log(sliceArray(inputAnim, 2, 5));
 
 // [ 'Tiger', 'Zebra', 'Ant' ]

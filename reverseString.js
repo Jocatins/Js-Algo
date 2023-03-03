@@ -26,3 +26,12 @@ function reverseString2(str) {
 	return str.split("").reduce((prev, curr) => curr + prev + "");
 }
 console.log(reverseString2("titan"));
+
+function revStr(str) {
+	let revWord = "";
+	for (let i = str.length - 1; i >= 0; i--) {
+		revWord += str[i];
+	}
+	return revWord;
+}
+console.log(revStr("titan"));

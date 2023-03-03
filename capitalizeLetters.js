@@ -7,12 +7,11 @@ function capitalize(sentence) {
 		.map((word) => word[0].toUpperCase() + word.slice(1))
 		.join(" ");
 }
-console.log(capitalize("titan"));
 
 function capitalize1(str) {
 	let firstLetter = str.slice(0, 1);
-	console.log(firstLetter);
-	return firstLetter.toUpperCase() + str;
+	//	console.log(firstLetter);
+	return firstLetter.toUpperCase() + str.slice(1);
 }
 console.log(capitalize1("titan"));
 
