@@ -17,3 +17,5 @@ Dog.prototype = Object.create(Animal.prototype);
 Dog.prototype.constructor = Dog;
 
 let beagle = new Dog();
+
+console.log(Math.trunc(9.89));

@@ -104,16 +104,17 @@ const num = ["2", "56", "67"];
 for (let i = 0; i < num.length; i++) {
 	// console.log(num[i] * 2);
 }
-//// While-Loop -------------
+//// WHILE LOOP -------------
 
 const numb = ["2", "56", "67"];
 let i = 0;
 while (i < numb.length) {
-	//	console.log(numb[i] * 2);
+	//console.log(numb[i] * 2);
+	// to print 4, 112, 134
 	i++;
 }
 
-// Do While -- Similar to while loop but the code is executed one time before checking the condition
+// DO WHILE LOOP-- Similar to while loop but the code is executed one time before checking the condition
 const numero = ["2", "56", "67"];
 let x = 0;
 do {
@@ -121,7 +122,7 @@ do {
 	x++;
 } while (x < numero.length);
 
-// For-of Loop
+// FOR - OF LOOP
 // A loop that can be used for arrays to iterate over them without specifying the last limit
 // This loop ends when reach the last index of the array
 
@@ -130,14 +131,14 @@ for (const n of numz) {
 	//console.log(n * 2);
 }
 
-// For in loop -- used on JS objects
+// FOR - IN LOOP-- used on JS objects
 
 const items = ["2", "56", "67"];
 for (const item in items) {
-	console.log(items[item] * 2);
+	//console.log(items[item] * 2);
 }
 
-// Map Loop
+// MAP LOOP
 // An ES6 approach to iterate over an array and store the result in a new variable
 const nos = ["2", "56", "67"];
 
@@ -145,10 +146,10 @@ const doubleOfNos = nos.map((z) => {
 	return z * 2;
 });
 
-// For-each-loop
+// FOR-EACH LOOP
 // Also an ES6 Approach and similar to the map but it only iterates over an array w/o making any changes or returning any values
 // this means you can tweak the array but you can use the individual indexes values
 
 nos.forEach((m) => {
-	console.log(m * 2);
+	//	console.log(m * 2);
 });

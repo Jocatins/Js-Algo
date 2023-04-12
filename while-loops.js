@@ -12,7 +12,7 @@
 let n = 5;
 let i = 1;
 while (i < n) {
-	console.log("G times", i);
+	console.log("while-loop", i);
 	i += 1;
 }
 
@@ -40,6 +40,6 @@ let i1 = 1;
 const na = 5;
 
 do {
-	console.log("do-while", i);
-	i++;
-} while (i <= na);
+	console.log("do-while loop", i1);
+	i1++;
+} while (i1 <= na);

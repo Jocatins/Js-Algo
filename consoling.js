@@ -5,7 +5,7 @@ const user = [
 	{ id: 4, name: "By" },
 ];
 
-console.table(user);
+console.table(`table - ${user}`);
 
 // console.time("fetching");
 // fetch("url").then(() => console.timeEnd("fetched"));
@@ -14,7 +14,7 @@ const obj = {
 	name: "Ami",
 	age: 23,
 };
-console.dir(obj);
+console.dir(`dir ${obj}`);
 
 // function fun1() {
 // 	console.trace();
@@ -31,7 +31,7 @@ const result = add(2, 4);
 console.assert(result == 6, "Expected 5");
 
 function fun(x) {
-	console.count(x);
+	console.count(`count - ${x}`);
 }
 fun("hello");
 fun("hello");
