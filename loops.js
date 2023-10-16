@@ -14,7 +14,7 @@ for (let i = 0; i < 3; i++) {
 for (let i = 2; i <= 5; i++) {
 	// 1st -> i = 2; 2 will be printed on the console because it passes the condition
 	// and i is increased to 3, 3 passes the condition and i is increased to 4
-	// the loop is terminated at 6
+	// the loop is terminated at 5
 	//	console.log("i times--", i);
 }
 // =========Display a Sequence of Even Numbers===========//
